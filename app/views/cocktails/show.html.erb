@@ -1,1 +1,6 @@
-show.html.erb
+<h1><%= @cocktail.name %></h1>
+<h3><%= @cocktail.ingredients.sample.name%></h3>
+<h3><%= @cocktail.doses.sample.description %></h3>
+
+<%= link_to "EDIT_ANCHOR_TEXT", "#", class: "btn" %></li>
+<%= link_to "GO_BACK_ANCHOR_TEXT", cocktails_path, class: "btn" %></li>
